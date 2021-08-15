@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,40 +8,36 @@
 
     <link rel="stylesheet" type="text/css" href="style.css" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </head>
+
 <body>
+
     <header class="principal" >
 
         <div class="typography client-area">
             <div class="border">
-               <img src="/img/phone.svg" alt="Phone Icon" style="width: 20px; margin-right: 5px;"><p>(17) 98813-0247</p>
-               <img src="/img/cadeado.svg" alt="Phone Icon" style="width: 22px; margin-right: 5px;"><p>Área do Cliente</p>
+               <a style="display: flex;" href="tel:17988130247"><img src="img/phone.svg" alt="Phone Icon" style="width: 20px; margin-right: 5px;"><p>(17) 98813-0247</p></a>
+               <a style="display: flex;" href="#area-cliente"><img src="img/cadeado.svg" alt="Phone Icon" style="width: 22px; margin-right: 5px;"><p>Área do Cliente</p></a>
             </div>
         </div>
 
         <section class="logo-menu" style="display: flex; width: 100%;">
             <div class="logo">
-                <img src="./img/logo.svg" alt="Logo Innsite">
+                <img src="img/logo.svg" alt="Logo Innsite">
             </div>
-            <div class="contact">
-
-            </div>
+            <div class="contact"></div>
             <div class="categories typography">
-                
-                <a><p>Home</p></a>
-            
-                <p>Sobre</p>
-            
-                <p>Serviços</p>
-            
-                <p>Portfólio</p>
-            
-                <p>Blog</p>
-
-                <button style="width: 140px; height: 40px; background: rgba(76, 175, 80, 0); color: #FFFFFF;">
+                <a href="#home"><p>Home</p></a>
+                <a href="#sobre"><p>Sobre</p></a>
+                <a href="#servicos"><p>Serviços</p></a>
+                <a href="#portfolio"><p>Portfólio</p></a>
+                <a href="#blog"><p>Blog</p></a>
+                <button onclick="window.open('https://api.whatsapp.com/send?phone=5515988101032','_blank')" style="width: 140px; height: 40px; background: rgba(76, 175, 80, 0); color: #FFFFFF;">
                     Contato
                 </button>
-
             </div>
         </section>
 
@@ -51,25 +47,78 @@
                 <p style="font-size: 16px;">Agência de</p>
                 <p style="font-size: 52px;">MARKETING DIGITAL E PUBLICIDADE</p>
                 <p style="font-size: 16px;">Sua comunicação muito mais bonita, com resultados reais em venda. Solicite um diagnóstico gratuito do seu marketing agora mesmo.</p>
-                <button style="font-size: 16px;">SOLICITE UM ORÇAMENTO <img src="/img/arrow.svg" alt=""></button>
+                <button onclick="window.open('https://api.whatsapp.com/send?phone=5515988101032','_blank')" style="font-size: 16px;">SOLICITE UM ORÇAMENTO <img src="img/arrow.svg" alt=""></button>
             </div>
 
             <div class="image-header">
-                <img src="./img/Gravity-Devices-UI-Mockup.png" alt="Gravity Devices">
+                <img src="img/Gravity-Devices-UI-Mockup.png" alt="Gravity Devices">
             </div>
 
             <div class="social-icons" >
-                <img src="/img/linha.svg" alt="">
-                <img src="/img/ico-face.svg" alt="">
-                <img src="/img/ico-insta.svg" alt="">
-                <img src="/img/ico-linkedin.svg" alt="">
-                <img src="/img/ico-pinterest.svg" alt="">
-                <img src="/img/Ico-youtube.svg" alt="" style="margin-bottom: 0;">
+                <img src="img/linha.svg" alt="Barra Vertical">
+                <a href="https://www.facebook.com/innsite/" target="_blank"><img src="img/ico-face.svg" alt="Facebook Innsite"></a>
+                <a href="https://www.instagram.com/innsiteweb/" target="_blank"><img src="img/ico-insta.svg" alt=""></a>
+                <a href="https://www.linkedin.com/company/innsite-web/" target="_blank"><img src="img/ico-linkedin.svg" alt=""></a>
+                <a href="https://br.pinterest.com/innsiteweb/" target="_blank"><img src="img/ico-pinterest.svg" alt=""></a>
+                <a href="https://www.youtube.com/channel/UCA0K6l1YpDqe-JuZGch3Tkg" target="_blank"><img src="img/Ico-youtube.svg" alt="" style="margin-bottom: 0;"></a>
             </div>
 
         </section>
 
     </header>
-    
+
+    <section style="display: flex; margin-top: 140px; margin-bottom: 100px; padding-left: 40px;">
+
+        <div class="description typography" style="margin-top: 30px; margin-right: 130px;">
+            <p style="font-size: 16px; color: #3A3A3A;">Nosso Trabalho</p>
+            <p style="font-size: 52px; color: #594DFF;">PORTFÓLIO</p>
+            <p style="margin-top: 20px;  font-size: 16px; color: #3A3A3A;">Colaboramos com empresas de pequeno à grande porte nacionalmente para ajudá-las a engajar seu público e conseguir resultados.</p>
+            <button onclick="location.href='#portfolio'" style="width: 185px; text-align: left; padding-left: 15px; margin-top: 40px; font-size: 16px; color:#3A3A3A; border-color: #3A3A3A;">VER TODOS <img style="margin-left: 30px;" src="img/arrowB.svg" alt=""></button>
+        </div>
+
+        <div class="owl-carousel owl-theme">
+            <div class="item typography">
+                <img class="first-image" src="img/placas.png" alt="">
+                <h2 style="color: #3A3A3A;">Placas.Autos</h2>
+                <p style="width: 90%; color: #3A3A3A;">Empresa de emplacamento mercosul com toda a comunicação elaborada por nós.</p>
+                <button onclick="location.href='#placas-autos'" style="margin-top: 30px; border-color: #FFFFFF !important; display: flex; width: 80px; height: 30px; font-size: 16px; color:#3A3A3A; border-color: #3A3A3A;">VER <img style="width: 25px; margin-left: 15px; margin-top: 5px;"src="img/arrowB.svg" alt=""></button>
+            </div>
+            <div class="item typography">
+                <img class="first-image" src="img/primos.png" alt="">
+                <h2 style="color: #3A3A3A;">Primos Materiais</h2>
+                <p style="width: 90%; color: #3A3A3A;">Materiais para construção, empresa de grande presença na cidade de Sorocaba. Redes sociais e gestão de tráfego.</p>
+                <button onclick="location.href='#primos-materiais'" style="margin-top: 30px; border-color: #FFFFFF !important; display: flex; width: 80px; height: 30px; font-size: 16px; color:#3A3A3A; border-color: #3A3A3A;">VER <img style="width: 25px; margin-left: 15px; margin-top: 5px;"src="img/arrowB.svg" alt=""></button>
+            </div>
+            <div class="item typography" >
+                <img class="first-image" src="img/Rectangle 9.png" alt="">
+                <h2 style="color: #3A3A3A;">Simone Personal</h2>
+                <p style="width: 90%; color: #3A3A3A;">Personal Trainer especializada em ercícios para pessoas com patologias.</p>
+                <button onclick="location.href='#simone-personal'" style="margin-top: 30px; border-color: #FFFFFF !important; display: flex; width: 80px; height: 30px; font-size: 16px; color:#3A3A3A; border-color: #3A3A3A;">VER <img style="width: 25px; margin-left: 15px; margin-top: 5px;"src="img/arrowB.svg" alt=""></button>
+            </div>
+            <div class="item typography" >
+                <img class="first-image" src="img/dilly.png" alt="">
+                <h2 style="color: #3A3A3A;">Dilly Troy</h2>
+                <p style="width: 90%; color: #3A3A3A;">Dentista especializada em harmonização orofacial.</p>
+                <button onclick="location.href='#dilly-troy'" style="margin-top: 30px; border-color: #FFFFFF !important; display: flex; width: 80px; height: 30px; font-size: 16px; color:#3A3A3A; border-color: #3A3A3A;">VER <img style="width: 25px; margin-left: 15px; margin-top: 5px;"src="img/arrowB.svg" alt=""></button>
+            </div>
+            <div class="item typography">
+                <img class="first-image" src="img/recriar.png" alt="">
+                <h2 style="color: #3A3A3A;">Recriar Pedagógica</h2>
+                <p style="width: 90%; color: #3A3A3A;">Reforço escolar e acompanhamento pedagógico.</p>
+                <button onclick="location.href='#recriar-pedagogica'" style="margin-top: 30px; border-color: #FFFFFF !important; display: flex; width: 80px; height: 30px; font-size: 16px; color:#3A3A3A; border-color: #3A3A3A;">VER <img style="width: 25px; margin-left: 15px; margin-top: 5px;"src="img/arrowB.svg" alt=""></button>
+            </div>
+        </div>
+
+    </section>
+
+    <footer style="overflow-y: hidden;">
+        <div style="display: flex; display: flex; width: 100%; align-items: center; justify-content: center; padding-top: 20px; padding-bottom: 20px;" class="typography">
+            <img style="margin-right: 40px;" src="img/house.svg" alt="">
+            <p style="margin-right: 100px; font-size: 20px;">O futuro da sua empresa começa hoje</p>
+            <button onclick="window.open('https://api.whatsapp.com/send?phone=5515988101032','_blank')" style="font-size: 16px; width: 300px;">SOLICITE UM ORÇAMENTO <img src="img/arrow.svg" alt=""></button>
+        </div>
+    </footer>
+
 </body>
+    <script src="script.js"></script>
 </html>

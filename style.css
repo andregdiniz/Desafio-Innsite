@@ -1,6 +1,7 @@
 body,html{
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 header{
@@ -8,8 +9,18 @@ header{
     padding-bottom: 20px;   
 }
 
+a {
+    text-decoration: none;
+    font-family: Lato;
+    color: #FFFFFF;
+}
+
 .principal {
     background-image: linear-gradient(to bottom right,#594DFF, #352D9F);
+}
+
+footer{
+    background-image: linear-gradient(to top right, #8880FF, #594DFF);
 }
 
 .typography{
@@ -61,6 +72,7 @@ button{
     background: rgba(76, 175, 80, 0); 
     color: #FFFFFF;
     border: #FFFFFF solid 1px;
+    cursor: pointer;
 }
 
 .image-header{
@@ -109,4 +121,26 @@ button{
     margin-top: 30px;
     width: 260px;
     height: 60px;
+}
+
+.owl-prev{
+    display: none;
+}
+
+.owl-next span{
+    font-size: 52px;
+    position: absolute;
+    top: 0;
+    left: 690px;
+    color: #fff;
+    top: 25%;
+    background-color: #6C63FF;
+    border-radius: 40px;
+    width: 70px;
+    height: 70px;
+    text-align: -webkit-center;
+}
+
+.owl-item{
+    overflow-y: hidden;
 }
