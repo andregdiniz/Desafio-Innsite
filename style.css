@@ -80,8 +80,6 @@ footer{
     color: #594DFF;
 }
 
-
-
 .categories p, button{
     margin-right: 30px;
     font-size: 20px;
@@ -220,23 +218,7 @@ button{
     display: none;
 }
 
-/*
-.owl-next span{
-    font-size: 52px;
-    position: absolute;
-    top: 0;
-    left: 660px;
-    color: #fff;
-    top: 25%;
-    background-color: #6C63FF;
-    border-radius: 40px;
-    width: 70px;
-    height: 70px;
-    text-align: -webkit-center;
-}*/
-
 .owl-next{
-
     font-size: 52px;
     position: absolute;
     top: 0;
@@ -249,8 +231,6 @@ button{
     height: 70px;
     text-align: -webkit-center;
 }
-
-
 .owl-next span{
     font-size: 52px;
     display: inline-block;
