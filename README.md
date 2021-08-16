@@ -6,7 +6,7 @@ Com o intuito de auxiliar no desenvolvimento do projeto foi feito uso da bibliot
 
 # Execução do projeto
 
-Para executar o projeto, basta fazer o download do repositório e executar o arquivo index.html
+Para executar o projeto, basta fazer o download do repositório e executar o arquivo index.html com um browser de sua preferência.
 
 # Observações
 
